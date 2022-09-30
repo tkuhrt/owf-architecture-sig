@@ -67,4 +67,23 @@ flowchart TD
   S -.- D -.- PE -.- P --> C
 ```
 
+### Storage
+```mermaid
+graph TD
+  subgraph S[Storage]
+    subgraph ES[Encrypted Storage]
+      esLS[Encrypted Local Storage]
+      esCS[Encrypted Cloud Storage]
+      esTBD["..."]
+    end
+    subgraph KS[Key Storage]
+      TEE[Trusted Execution Environment]
+      KV[Software Key Vault]
+    end
+  end
+```
+The storage module is responsible for holding the different digital objects that are contained within the wallet. There are two different types of storage that should be considered:
+1. Encrypted Storage
+1. Key Storage
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
