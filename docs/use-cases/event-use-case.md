@@ -4,6 +4,11 @@ This document covers the typical use cases that would require a wallet when an i
 1. Attend the event, which will require using the ticket to gain entry into the Event Venue
 2. Sell the ticket to someone else, which will require transferring the ticket from the Attendee's wallet to the Buyer's wallet
 
+> Why should we start the use case so early in the journey: "_an individual wants to purchase ticket(s) and attend an event_". Do we need the responsibility of obtaining the ticker on the wallet's side? 
+> 
+> It couldn't be sufficient for the wallet that "_an individual has purchased a ticket for attending an event_"?   
+
+
 ## Use Case Diagram
 ```mermaid
 flowchart LR
