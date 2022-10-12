@@ -13,7 +13,7 @@ classDiagram
     <<Abstract>> KMS
     KMS: + String service_identifier
     KMS: + generateKeyPair()
-    KMS: + imortPrivateKey(PrivateKey)
+    KMS: + importPrivateKey(PrivateKey)
     KMS: + getPublicKey(kid)
     class RemoteKMS{
       + String connection_credential
