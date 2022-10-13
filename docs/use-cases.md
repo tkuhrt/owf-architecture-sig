@@ -26,6 +26,11 @@ flowchart LR
     iUC2([fa:fa-share-from-square Prove Age])
     iUC3([fa:fa-share-from-square Prove Place of Birth])
     iUC4([fa:fa-share-from-square Prove Residency])
+    iUC5([fa:fa-share-from-square Prove License Validity])
+  end
+  subgraph tkt[Public Transit]
+    tktUC1([fa:fa-share-from-square Bus Pass])
+    tktUC2([fa:fa-share-from-square Metro Pass])
   end
   subgraph t[Travel]
     tUC1([fa:fa-share-from-square Purchase Ticket fa:fa-right-to-bracket])
@@ -41,11 +46,24 @@ flowchart LR
    emUC1([fa:fa-share-from-square Prove Education])
    emUC2([fa:fa-share-from-square Prove Work Experience])
   end
+  subgraph mem[Memberships]
+    memUC1([fa:fa-share-from-square Prove University Connection])
+    memUC2([fa:fa-share-from-square Provide Club Membership])
+    memUC3([fa:fa-share-from-square Library Cards])
+    memUC4([fa:fa-share-from-square Prove Museum Membership])
+  end
+  subgraph in[Insurance]
+    inUC1([fa:fa-share-from-square Insurance Card])
+    inUC2([fa:fa-share-from-square Vehicle Reg and Insurance])
+  end
   wh-->ev
   wh-->s
   wh-->i
+  wh-->tkt
   wh-->t
   wh-->em
+  wh-->mem
+  wh-->in
   evUC1 & evUC4 & sUC1 & tUC1-->p
 ```
 
